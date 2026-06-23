@@ -1,0 +1,45 @@
+{
+    "smtp": {
+        "host": "smtp.ejemplo.com",
+        "port": 587,
+        "secure": "tls",
+        "auth": true,
+        "username": "envio@ejemplo.com",
+        "password": "password"
+    },
+    "sender": {
+        "email": "envio@ejemplo.com",
+        "name": "Información de prueba"
+    },
+    "recipients": {
+        "to": [
+            {
+                "email": "usuario1@mail.com",
+                "name": "usuario1"
+            }
+        ],
+        "cc": [
+            {
+                "email": "usuario2@mail.com",
+                "name": "usuario2"
+            }
+        ],
+        "bcc": [
+            {
+                "email": "usuario3@mail.com",
+                "name": "usuario3"
+            }
+        ]
+    },
+    "message": {
+        "subject": "Configuración creada con Mail config",
+        "body": "<h1>Hola<\/h1><p>Este es un correo electrónico de prueba enviado utilizando la configuración de un archivo JSON.<\/p>",
+        "alt_body": "Hola\r\nEste es un correo electrónico de prueba enviado utilizando la configuración de un archivo JSON.",
+        "is_html": true
+    },
+    "attachments": [],
+    "settings": {
+        "debug": 0,
+        "charset": "UTF-8"
+    }
+}
