@@ -9,14 +9,12 @@ Librería ligera para envío de correos electrónicos compatible con PHP 5.4+.
 | `freemailer.php` | Librería principal de envío de correos |
 | `config.json` | Configuración (SMTP, remitente, destinatarios, mensaje, adjuntos) |
 | `config.php` | Editor web con PHP (formulario + editor JSON) |
-| `config_editor.html` | Editor web standalone (solo HTML/CSS/JS, sin servidor) |
 | `test.php` | Script de prueba que envía un correo usando `config.json` |
 
 ## Requisitos
 
 - PHP 5.4 o superior (para el editor PHP y envío)
 - Extensión OpenSSL (para SMTP con TLS/SSL)
-- Navegador web (para el editor HTML standalone)
 
 ## Instalación
 
@@ -27,17 +25,6 @@ require_once 'freemailer.php';
 ```
 
 ## Edición de Configuración
-
-### Editor HTML (standalone)
-
-Abre `config_editor.html` directamente en el navegador. No requiere PHP ni servidor. Permite:
-
-- Editar todos los campos de `config.json` (SMTP, remitente, destinatarios, mensaje, adjuntos, ajustes)
-- Importar un archivo `.json` existente
-- Vista previa del JSON resultante
-- Copiar al portapapeles o descargar como `config.json`
-
-### Editor PHP
 
 Accede a `config.php` desde un servidor con PHP. Ofrece:
 
